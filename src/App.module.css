@@ -1,0 +1,17 @@
+.appContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* min-height: 100vh; */
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #f0f4f8;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+}

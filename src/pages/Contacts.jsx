@@ -1,10 +1,10 @@
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 // import { nanoid } from 'nanoid';
-import ContactForm from './ContactForm.jsx';
-import ContactList from './ContactList.jsx';
-import Filter from './Filter.jsx';
-import style from './Contact.module.css';
+import ContactForm from '../components/ContactForm';
+import ContactList from '../components/ContactList';
+import Filter from '../components/Filter';
+import style from '../components/Contact.module.css';
 import {
   fetchContacts,
   addContact,
@@ -12,7 +12,7 @@ import {
   updateFilter,
 } from '../redux/contactsSlice.js';
 
-const App = () => {
+const Contacts = () => {
   const contacts = useSelector(state => state.contacts.items);
   const filter = useSelector(state => state.contacts.filter);
   const isLoading = useSelector(state => state.contacts.isLoading);
@@ -68,4 +68,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default Contacts;
