@@ -2,7 +2,6 @@ import React, { useEffect } from 'react';
 import { Routes, Route, Navigate } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
 import { fetchContacts } from './redux/contactsSlice';
-// import Navigation from './components/Navigation';
 import Register from './pages/Register';
 import Login from './pages/Login';
 import Contacts from './pages/Contacts';
